@@ -61,8 +61,6 @@ PIA-Website/
 │   ├── pia-logo.svg
 │   ├── check in 1905x746.jpg
 │   └── UMRAH-banner.jpg
-|
-└── README.md
 
 ## How to Run the Project
 
