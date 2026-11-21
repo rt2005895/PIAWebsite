@@ -1,0 +1,569 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <title>
+      PIA | Great People to Fly with-Pakistan International Airlines
+    </title>
+    <link rel="icon" href="Media/icon.png" type="image/png" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="announcement">
+      <div class="announcement-icon">i</div>
+
+      <div class="announcement-slides">
+        <div class="announcement-text text-1">
+          <a href="#traveladvisories"
+            >Travel Advisories & Other Important Announcements - Please Click
+            Here</a
+          >
+        </div>
+        <div class="announcement-text text-2">
+          <a href="#dualnationality"
+            >Travel Advisory for Dual Nationality Passengers Travelling to
+            Pakistan - Please Click Here</a
+          >
+        </div>
+        <div class="announcement-text text-3">
+          <a href="#giftcard"
+            >Share the Freedom with your loved ones to Fly with PIA Gift Cards.
+            ✈️ - Please Click Here</a
+          >
+        </div>
+        <div class="announcement-text text-4">
+          <a href="#lahoretolondon"
+            >Direct Flights from Lahore to London Starting 30 March 2026 ✈️ -
+            Please Click Here</a
+          >
+        </div>
+        <div class="announcement-text text-5">
+          <a href="flightsoperate"
+            >PIA flights will operate from Terminal 5 at King Khalid Airport
+            Riyadh - Please Click Here</a
+          >
+        </div>
+      </div>
+
+      <div class="announcement-control">
+        <button class="prev" onclick="prevSlide()">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button class="pause" onclick="pauseSlide()">
+          <i class="fa-solid fa-pause"></i>
+        </button>
+        <button class="next" onclick="nextSlide()">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+        <button class="close" onclick="playSlide()">
+          <i class="fa-solid fa-close"></i>
+        </button>
+      </div>
+    </div>
+
+    <header class="navbar">
+      <div class="logo">
+        <img src="Media/pia-logo.svg" alt="PIA logo" />
+      </div>
+
+      <nav class="nav-center">
+        <div class="nav-item">
+          <input type="checkbox" id="item-1" />
+          <label for="item-1">Where we Fly</label>
+          <ul class="dropdown">
+            <li><a href="#">Destinations</a></li>
+            <li><a href="#">Our Network</a></li>
+            <li><a href="#">Map</a></li>
+          </ul>
+        </div>
+
+        <div class="nav-item">
+          <input type="checkbox" id="item-2" />
+          <label for="item-2">Experience</label>
+          <ul class="dropdown">
+            <li><a href="#">Baggage</a></li>
+            <li><a href="#">Cabins</a></li>
+            <li><a href="#">Post check-in Upgrade</a></li>
+            <li><a href="#">Magazines - Humsafar / Air Safety</a></li>
+            <li><a href="#">Seat</a></li>
+            <li><a href="#">Travel Advisories</a></li>
+            <li><a href="#">Gift Card</a></li>
+          </ul>
+        </div>
+
+        <div class="nav-item">
+          <input type="checkbox" id="item-3" />
+          <label for="item-3">Awards +Plus</label>
+          <ul class="dropdown">
+            <li><a href="#">Membership Cards</a></li>
+            <li><a href="#">Programs</a></li>
+            <li><a href="#">Earnings</a></li>
+            <li><a href="#">Redemptions</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+        </div>
+
+        <div class="nav-item">
+          <input type="checkbox" id="item-4" />
+          <label for="item-4">Deals</label>
+          <ul class="dropdown">
+            <li><a href="#">Online Discounts</a></li>
+          </ul>
+        </div>
+        <div class="nav-item">
+          <a href="#">Corporate Website</a>
+        </div>
+      </nav>
+
+      <div class="nav-right">
+        <i class="fa-solid fa-magnifying-glass search"></i>
+        <a class="login" href="#booking">Award +Plus Login</a>
+      </div>
+    </header>
+
+    <section class="hero">
+      <img src="Media/check in 1905x746.jpg" alt="" />
+      <img src="Media/UMRAH-banner.jpg" alt="" />
+    </section>
+
+    <!-- <section class="booking">
+      <div class="tabs">
+        <label for="flight-tab" class="flight">
+          <img src="Media/1.svg" />
+          <span>Flight</span>
+        </label>
+        <label for="checkin-tab" class="checkin">
+          <img src="Media/2.svg" />
+          <span>Web Check-in</span>
+        </label>
+        <label for="booking-tab" class="booking">
+          <img src="Media/3.svg" />
+          <span>My Booking</span>
+        </label>
+        <label for="status-tab" class="status">
+          <img src="Media/4.svg" />
+          <span>Flight Status</span>
+        </label>
+        <label for="schedule-tab" class="schedule">
+          <img src="Media/5.svg" />
+          <span>Schedules</span>
+        </label>
+      </div>
+    </section> -->
+
+    <section class="promotional-links">
+      <a href="#charterflight">Charter Flight</a>
+      <a href="#onlinediscount">Online Discount</a>
+      <a href="#checkin">Web & Mobile Check-In</a>
+      <a href="#callfly">Call n Fly</a>
+      <a href="#nusuk">Nusuk</a>
+    </section>
+
+    <section class="links">
+      <div id="charterflight">
+        <img src="Media/chartered-flight.jpg" />
+      </div>
+      <div id="onlinediscount">
+        <img src="Media/Online_Discount_1920x360.jpg" />
+      </div>
+      <div id="checkin">
+        <img src="Media/new_checkin_1920x360.jpg" />
+      </div>
+      <div id="callfly">
+        <img src="Media/call and fly 2.jpg" />
+      </div>
+      <div id="nusuk">
+        <img src="Media/Nusuk_Banner_II.jpg" />
+      </div>
+    </section>
+
+    <section class="services">
+      <h1 class="serviceh1">OUR SERVICES</h1>
+      <div class="servicecard">
+        <img src="Media/gift_card_285x285.png" alt="Gift Card" />
+        <div class="servicecontent">
+          <h2>Gift Card</h2>
+          <p>
+            Surprise your loved ones with the gift of travel through a PIA Gift
+            Card. Let them choose their destination and create memories that
+            last a lifetime. A thoughtful, flexible, and perfect gift for every
+            occasion.
+          </p>
+        </div>
+      </div>
+
+      <div class="servicecard">
+        <img src="Media/servies2.png" alt="Seat Selection" />
+        <div class="servicecontent">
+          <h2>Seat Selection</h2>
+          <p>
+            Tailor your travel experience with our Seat Selection feature, where
+            comfort meets choice. Choose your preferred seat and embark on a
+            journey personalized just for you.
+          </p>
+        </div>
+      </div>
+
+      <div class="servicecard">
+        <img src="Media/services3.png" alt="Pre-Book Baggage" />
+        <div class="servicecontent">
+          <h2>Pre-Book Baggage</h2>
+          <p>
+            Save by purchasing additional baggage before arriving at the
+            airport.
+          </p>
+        </div>
+      </div>
+      <div class="servicecard">
+        <img src="Media/services4.png" alt="Special Assistance" />
+        <div class="servicecontent">
+          <h2>Special Assistance</h2>
+          <p>
+            Elevate your journey with our Special Assistance services, including
+            personalized wheelchair support. Ensuring a smooth and accessible
+            travel experience, we prioritize your comfort and convenience every
+            step of the way.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="bestoffers">
+      <h1 class="offertitle">BEST OFFERS</h1>
+      <div class="cards">
+        <div class="offercard offerdubai">
+          <img src="Media/DXB_1.png" />
+          <div class="route">
+            Islamabad<br />Dubai<br />
+            <small> PKR </small> <b>70,336.00</b>
+          </div>
+          <div class="offer-links">
+            <a href="#">Book Now</a>
+          </div>
+          <div class="details">
+            <a href="#">More Details</a>
+          </div>
+        </div>
+
+        <div class="offercard offertoronto">
+          <img src="Media/YTO.png" />
+          <div class="route">
+            Islamabad<br />Toronto<br />
+            <small> PKR </small> <b>282,291.00</b>
+          </div>
+          <div class="offer-links">
+            <a href="#">Book Now</a>
+          </div>
+          <div class="details">
+            <a href="#">More Details</a>
+          </div>
+        </div>
+
+        <div class="offercard offerlondon">
+          <img src="Media/London_BigBen.jpeg" />
+          <div class="route">
+            Lahore<br />London<br />
+            <small> PKR </small> <b>150,097.00</b>
+          </div>
+          <div class="offer-links">
+            <a href="#">Book Now</a>
+          </div>
+          <div class="details">
+            <a href="#">More Details</a>
+          </div>
+        </div>
+
+        <div class="offercard offerparis">
+          <img src="Media/Paris - Shanzillizay.png" />
+          <div class="route">
+            Islamabad<br />Paris<br />
+            <small> PKR </small> <b>161,553.00</b>
+          </div>
+          <div class="offer-links">
+            <a href="#">Book Now</a>
+          </div>
+          <div class="details">
+            <a href="#">More Details</a>
+          </div>
+        </div>
+
+        <div class="offercard offerbaku">
+          <img src="Media/baku_offers.png" />
+          <div class="route">
+            Lahore<br />Baku<br />
+            <small> PKR </small> <b>112,987.00</b>
+          </div>
+          <div class="offer-links">
+            <a href="#">Book Now</a>
+          </div>
+          <div class="details">
+            <a href="#">More Details</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="corporateprogram">
+      <div class="corporatecontent">
+        <h1>A+ Executive Corporate Program</h1>
+        <p>
+          Our business services offer flexibility and exclusive savings for your
+          company.<br />
+          We provide tailored solutions based on your travel spend to maximize
+          your corporate travel budget.<br />
+          You can collectively earn rewards from all employee travel and redeem
+          them for dynamic flights.<br />
+          Additionally, you can use your rewards for flight upgrades and other
+          benefits like excess baggage and pre-allocation of seats.<br />
+          Our goal is to enhance your corporate travel experience and ensure the
+          best value for your budget.<br />
+        </p>
+        <a href="#" class="memberbtn"> Become a Member </a>
+      </div>
+    </section>
+
+    <h1 class="newstitle">OUR NEWS</h1>
+    <section class="news">
+      <div class="newscard">
+        <div class="newscard piarecconects">
+          <video poster="Media/cover1.png" controls muted>
+            <source src="Media/1.mp4" type="video/mp4" />
+          </video>
+          <div class="newscontent">
+            <h2>PIA Reconnects Islamabad & Manchester!</h2>
+            <p>
+              Pakistan International Airlines (PIA) is set to resume its
+              highly-anticipated Islamabad-to-Manchester route after a five-year
+              hiatus, connecting the capital with the UK's North once again with
+              2 weekly Flights.
+            </p>
+            <a
+              href="http://youtube.com/@pakistaninternationalairline"
+              class="learnmore"
+              >Learn more</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="newscard">
+        <div class="newscard piarecconects">
+          <video poster="Media/cover2.png" controls muted>
+            <source src="Media/2.mp4" type="video/mp4" />
+          </video>
+          <div class="newscontent">
+            <h2>Unveiling Skardu with PIA</h2>
+            <p>
+              Discover the enchanting beauty of Skardu, a gem in Pakistan's
+              northern regions, with Pakistan International Airlines (PIA).
+              Nestled in the heart of the Karakoram Range, Skardu offers
+              breathtaking landscapes, from towering mountains to serene lakes.
+              With PIA's reliable and comfortable flights, you can explore the
+              rich cultural heritage, vibrant bazaars, and natural wonders of
+              this stunning destination.
+            </p>
+            <a
+              href="http://youtube.com/@pakistaninternationalairline"
+              class="learnmore"
+              >Learn more</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="newscard">
+        <div class="newscard piarecconects">
+          <video poster="Media/cover3.png" controls muted>
+            <source src="Media/3.mp4" type="video/mp4" />
+          </video>
+          <div class="newscontent">
+            <h2>Dining with Luxury</h2>
+            <p>
+              Embark on a culinary journey with Pakistan International Airlines
+              (PIA) where every meal is a celebration of taste and tradition.
+              Our dining experience transcends mere sustenance, offering
+              passengers a luxurious blend of flavors from around the world.
+            </p>
+            <a
+              href="http://youtube.com/@pakistaninternationalairline"
+              class="learnmore"
+              >Learn more</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sales">
+      <div class="salescard">
+        <h2>
+          Get the latest sales straight to your <br />
+          inbox.
+        </h2>
+        <div class="salesfields">
+          <label>
+            E-mail Address
+            <input type="email" placeholder="abc@xyz.com" />
+          </label>
+          <label>
+            Preferred City of Departure
+            <select>
+              <option>Karachi (KHI)</option>
+              <option>Bahawalpur (BHV)</option>
+              <option>Chitral (CJL)</option>
+              <option>Dalbandin (DBA)</option>
+              <option>Dera Ghazi Khan (DEA)</option>
+              <option>Faislabad (LYP)</option>
+              <option>Gilgit (GIL)</option>
+              <option>Gwadar (GWD)</option>
+              <option>Islamabad (ISB)</option>
+              <option>Lahore (LHE)</option>
+              <option>Multan (MUX)</option>
+              <option>Peshawar (PEW)</option>
+              <option>Skardu (KDU)</option>
+            </select>
+          </label>
+          <button>Sign in</button>
+        </div>
+      </div>
+
+      <div class="appcard">
+        <div class="store">
+          <h2>Check out our<br />mobile app</h2>
+          <a href="https://apps.apple.com/us/app/pia-app/id1143220222">
+            <img src="Media/appstore.png" />
+          </a>
+          <a
+            href="https://play.google.com/store/apps/details?id=com.piac.thepiaapp.android&hl=en"
+          >
+            <img src="Media/googleplay.png" />
+          </a>
+        </div>
+        <div class="phone">
+          <img src="Media/iphone.png" alt="phonescreen" />
+        </div>
+      </div>
+    </section>
+
+    <footer class="pia-footer">
+      <div class="footer-wave">
+        <img src="Media/wave2.svg" alt="" />
+      </div>
+      <div class="footer-top">
+        <div class="footer-logo">
+          <img src="Media/pia-logo.svg" alt="PIA" />
+        </div>
+        <div class="footer-contact">
+          <span class="footer-icon"
+            ><i class="fa-solid fa-location-dot"></i
+          ></span>
+          <p>
+            PIA Building, Jinnah International Airport,<br />
+            Karachi, 75200, Pakistan.
+          </p>
+        </div>
+
+        <div class="footer-contact">
+          <span class="footer-icon"><i class="fa-solid fa-phone"></i></span>
+          <p>(+92-21)-111-786-786</p>
+        </div>
+
+        <div class="footer-contact">
+          <span class="footer-icon"><i class="fa-solid fa-envelope"></i></span>
+          <p>contact@piac.aero</p>
+        </div>
+      </div>
+      <div class="social-row">
+        <div class="social-line"></div>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/PakistanIntAirlines/"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://x.com/Official_PIA"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="https://www.instagram.com/pakistanintairlines/"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/company/pakistan-international-airlines/home/"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://www.youtube.com/@pakistaninternationalairline"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <div class="social-line"></div>
+      </div>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>About Us</h3>
+          <div class="footer-subcolumns">
+            <div>
+              <a href="#">Vision &amp; Values</a>
+              <a href="#">Management</a>
+              <a href="#">Careers</a>
+              <a href="#">Accessibility Plan</a>
+            </div>
+            <div>
+              <a href="#">Press Release</a>
+              <a href="#">Tenders</a>
+              <a href="#">Bid Reports</a>
+              <a href="#">Agent Registrations</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h3>Facilities</h3>
+          <div class="footer-subcolumns">
+            <div>
+              <a href="#">Air Passenger Rights</a>
+              <a href="#">Conditions of Carriage</a>
+              <a href="#">Booking Conditions</a>
+              <a href="#">Traveler's Information</a>
+            </div>
+            <div>
+              <a href="#">Baggage Guide</a>
+              <a href="#">Overseas Pakistanis</a>
+              <a href="#">Track Your Cargo</a>
+              <a href="#">Book Charter</a>
+              <a href="#">Digital Check-In</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h3>Help & Contact</h3>
+          <a href="#">Help & Contact</a>
+          <a href="#">Special Assistance</a>
+          <a href="#">Special Assistance Form</a>
+          <a href="#">Frequently Asked Questions</a>
+        </div>
+        <div class="footer-section more-section">
+          <h3>&nbsp;</h3>
+          <a href="#">London Operation</a>
+          <a href="#">Site Map</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Business with PIA</a>
+          <a href="#">Feedback</a>
+        </div>
+      </div>
+      <div class="bottom-expand">
+        <input type="checkbox" id="footer-toggle" />
+        <div class="bottom-line"></div>
+        <label for="footer-toggle" class="expand-button">
+          <i class="fa-solid fa-chevron-down"></i>
+        </label>
+
+        <div class="extra-links">
+          <a href="#">Cookie Policy</a>
+          <a href="#">Legal</a>
+          <a href="#">Accessibility</a>
+          <a href="#">Combating Human Trafficking</a>
+          <a href="#">Cookie Consent</a>
+        </div>
+      </div>
+      <div class="copyright">
+        © 2026. Pakistan International Airlines. All Rights Reserved.
+      </div>
+    </footer>
+    <a href="#" class="contact-button"> Contact Us </a>
+    <div class="accessibility-button">
+      <i class="fa-solid fa-wheelchair"></i>
+    </div>
+  </body>
+</html>
